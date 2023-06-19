@@ -14,15 +14,24 @@ Todas las imágenes utilizadas dentro de la página se encuentran almacenadas en
 ## Despliegue
 ### Local
 Para desplegar el proyecto de manera local se debe clonar el mismo.
- `git clone https://github.com/sofia604/carshop.git`
+
+```git clone https://github.com/sofia604/carshop.git```
+
 Luego se debe ingresar a la carpeta clonada desde la terminal
-  `cd carshop`
+
+```cd carshop```
+
 Se debe correr los siguientes comandos
- `npm install`
- `npm start`
+
+```npm install```
+```npm start```
+
 Luego automáticamente se abirá una pestaña en el navegadore dentro del localhost:3000
+
 **Nota**: El proyecto no cuenta con las credenciales de AWS para evidenciar su total funcionamiento. Crear las respectivas tablas en Dynamo. 
 
 ### AWS
+
 El proyecto se encuentra desplegado en un Bucket de AWS dentro de la siguiente dirección http://carshop-espana.s3-website-us-east-1.amazonaws.com
+
 **Nota**: De momento se puede visualizar solo la página raiz. 
