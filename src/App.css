@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  background-color: black;
+  padding: 10px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-item a:hover {
+  color: rgb(95, 0, 95);
+}
+
+.HomeContainer{
+  margin:10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.Card-container {
+  display: flex;
+}
+
+.Card-container div {
+  margin-right: 20px;
+}
+
+.custom-heading {
+  font: small-caps 100%/200% serif;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+
+
+.carousel-item {
+  height: 22rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#Fbutton{
+  transition: background-color 0.3s ease;
+}
+
+#Fbutton:hover{
+  background-color: rgb(1, 16, 26);
+}
