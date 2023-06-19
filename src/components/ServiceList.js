@@ -6,10 +6,10 @@ import { useDispatch } from 'react-redux';
 import {addCustomer} from '../features/forms/formsSlice'
 
 AWS.config.update({
-  accessKeyId: 'ASIAQFISFAIREF3XTCOK',
-  secretAccessKey: 'cXN4CJztnG/H7Sb24CyyzkX4QYqq9MLpftV/cpyC',
+  accessKeyId: '',
+  secretAccessKey: '',
   region: 'us-east-1',
-  sessionToken: 'FwoGZXIvYXdzEDwaDC3v1PfB5b7ALBMwCCK/AQ+UKd/ghQb4CJDo62IhDZ9CE3RgIb2tesANqzpaUpD03fqvh/lvMKL4971fvaIdFZ+16p2DMIQVe89No9FOdWxq0wMVa+OFYbEPgcj8bz6L/XuvmKzgdH+rC0ze/MUlFoNW+wWll7fv7gQpEjgHkGq+4kKx1aph0qkziKOorUPkzcIgA7UbBkaf9nbdExQu64e38uHJrT04T4M//3avdq9xzDOFqXAhkNMrTEhog6Jh0K8scgrIfLOeVpxGJy/jKIX/vqQGMi1L/TbQLf6RRtF46qCe7THvGB1H08hnTLQjP1aO24v+vlQQzrcP3TTIYRg2nD0='
+  sessionToken: ''
 });
 
 
