@@ -32,6 +32,6 @@ Luego automáticamente se abirá una pestaña en el navegadore dentro del localh
 
 ### AWS
 
-El proyecto se encuentra desplegado en un Bucket de AWS dentro de la siguiente dirección http://carshop-espana.s3-website-us-east-1.amazonaws.com
+El proyecto se encuentra desplegado en un Bucket de AWS dentro de la siguiente dirección http://deploi-react-aws.s3-website-us-east-1.amazonaws.com
 
 **Nota**: De momento se puede visualizar solo la página raiz. 
