@@ -6,10 +6,10 @@ import { useNavigate } from 'react-router-dom';
 import Modal from './Modal'
 
 AWS.config.update({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    region: 'us-east-1',
-    sessionToken:  process.env.AWS_SESSION_TOKEN 
+  accessKeyId: process.env.REACT_APP_AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.REACT_APP_AWS_SECRET_ACCESS_KEY,
+  region: 'us-east-1',
+  sessionToken:  process.env.REACT_APP_AWS_SESSION_TOKEN
 });
 
 export const Ticket = () => {
