@@ -1,17 +1,20 @@
 import React from 'react'
 import AWS from 'aws-sdk';
 import {useSelector} from 'react-redux'
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Modal from './Modal'
+
+AWS.config.update({
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    region: 'us-east-1',
+    sessionToken:  process.env.AWS_SESSION_TOKEN 
+});
 
 export const Ticket = () => {
     const forms = useSelector(state => state.forms)
-
-    AWS.config.update({
-        accessKeyId: '',
-        secretAccessKey: '',
-        region: 'us-east-1',
-        sessionToken: ''
-    });
+    const [ventana, setVentana] = useState(false)
     const navigate = useNavigate()
     const values = {
         customerName : forms[1].name,
@@ -52,6 +55,7 @@ export const Ticket = () => {
     };
 return (
     <div className='h-screen flex items-center justify-center mb-6'>
+        <Modal open={ventana} setOpen={setVentana} ></Modal>
         <form className='border-2' onSubmit={handleForm}>
             <div className="px-4 py-6 sm:px-6">
                 <h1>Preview Ticket</h1>
@@ -96,7 +100,7 @@ return (
             </div>
             )}
             <div class="flex justify-center items-center mb-3">
-                <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
+                <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded" onClick={()=>setVentana(!ventana)}>
                     Submit Order
                 </button>
             </div>

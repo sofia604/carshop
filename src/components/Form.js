@@ -7,10 +7,10 @@ import {addCustomer} from '../features/forms/formsSlice'
 
 
 AWS.config.update({
-    accessKeyId: '',
-    secretAccessKey: '',
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
     region: 'us-east-1',
-    sessionToken: ''
+    sessionToken:  process.env.AWS_SESSION_TOKEN 
 });
 
 export const Form = () => {
