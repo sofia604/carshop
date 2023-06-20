@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Carshop Bootcamp 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+El proyecto consiste en una página para reservar servicios dentro de un taller mecánicos, donde los usuarios puede llenar sus datos, los datos
+del vehículo y los servicios que desean obtener, finalmente que estos datos sean correctos para poder reservar la cita. 
 
-In the project directory, you can run:
+## Desarrollo
+Para el desarrollo de este proyecto se usaron librerías de React como react-router-dom para poder redireccionar cada una de las páginas dentro
+de los distintos formularios que se deben llenar. También se usó la librería aws-sdk para conectar la aplicación con la base de datos Dynamo
+de AWS misma que guarda la información de los formularios y tickets generados, así como también posee la información de los servicios disponibles. 
+Todas las imágenes utilizadas dentro de la página se encuentran almacenadas en un Bucket S3 de AWS. 
 
-### `npm start`
+## Despliegue
+### Local
+Para desplegar el proyecto de manera local se debe clonar el mismo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```git clone https://github.com/sofia604/carshop.git```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Luego se debe ingresar a la carpeta clonada desde la terminal
 
-### `npm test`
+```cd carshop```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Se debe correr los siguientes comandos
 
-### `npm run build`
+```npm install```
+```npm start```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Luego automáticamente se abirá una pestaña en el navegadore dentro del localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Nota**: El proyecto no cuenta con las credenciales de AWS para evidenciar su total funcionamiento. Crear las respectivas tablas en Dynamo. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### AWS
 
-### `npm run eject`
+El proyecto se encuentra desplegado en un Bucket de AWS dentro de la siguiente dirección http://carshop-espana.s3-website-us-east-1.amazonaws.com
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Nota**: De momento se puede visualizar solo la página raiz. 
